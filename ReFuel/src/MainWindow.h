@@ -27,5 +27,4 @@ private:
     void createTrayIcon();
 };
 
-
 #endif //REFUEL_MAINWINDOW_H
