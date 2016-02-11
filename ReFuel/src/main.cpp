@@ -5,8 +5,6 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    //Q_INIT_RESOURCE(refuel);
-
     QApplication app(argc, argv);
 
     if (!QSystemTrayIcon::isSystemTrayAvailable()) {
