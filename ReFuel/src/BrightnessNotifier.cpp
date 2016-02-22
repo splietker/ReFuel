@@ -20,7 +20,7 @@
 
 #include "BrightnessNotifier.h"
 
-BrightnessNotifier::BrightnessNotifier() : oscillationIntervalLength(30) {
+BrightnessNotifier::BrightnessNotifier() {
     display = XOpenDisplay(0);
     screen = XRRGetScreenResources(display, DefaultRootWindow(display));
 }

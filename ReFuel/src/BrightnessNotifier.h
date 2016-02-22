@@ -39,12 +39,6 @@ private:
     XRRScreenResources *screen;
 
     /**
-     * Oscillation interval length.
-     * Determines the time (in seconds) one oscillation of the notifier takes.
-     */
-    double oscillationIntervalLength;
-
-    /**
      * Start time of the current oscillation wave.
      */
     system_clock::time_point oscillationStartTime;

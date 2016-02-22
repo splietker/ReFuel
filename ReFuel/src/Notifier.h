@@ -32,8 +32,12 @@ public:
 
     void reset();
 
-    void setIntensity(double intensity) {
+    virtual void setIntensity(double intensity) {
         Notifier::intensity = intensity;
+    }
+
+    virtual void setOscillationIntervalLength(double oscillationIntervalLength) {
+        Notifier::oscillationIntervalLength = oscillationIntervalLength;
     }
 
 protected:
@@ -48,6 +52,13 @@ protected:
      * Determines the the wait time between two iterations of the notificationLoop method.
      */
     double loopWaitTime;
+
+protected:
+/**
+     * Oscillation interval length.
+     * Determines the time (in seconds) one oscillation of the notifier takes.
+     */
+    double oscillationIntervalLength;
 
     virtual void notificationStart() = 0;
 

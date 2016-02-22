@@ -8,7 +8,7 @@ find_package(Boost COMPONENTS log thread system REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 find_package(Threads REQUIRED)
 
-set(LIB_SOURCE_FILES Notifier.h Notifier.h BrightnessNotifier.cpp BrightnessNotifier.h Notifier.cpp)
+set(LIB_SOURCE_FILES Notifier.h Notifier.h BrightnessNotifier.cpp BrightnessNotifier.h Notifier.cpp AmbientLightNotifier.cpp AmbientLightNotifier.h)
 set(APP_SOURCE_FILES main.cpp MainWindow.cpp MainWindow.h )
 add_library(refuel_lib ${LIB_SOURCE_FILES})
 target_link_libraries(refuel_lib m pthread X11 Xrandr ${Boost_LIBRARIES})

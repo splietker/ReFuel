@@ -20,7 +20,7 @@
 
 #include "Notifier.h"
 
-Notifier::Notifier() : loopWaitTime(0.1) {
+Notifier::Notifier() : loopWaitTime(0.1), oscillationIntervalLength(30){
 }
 
 Notifier::~Notifier() {
